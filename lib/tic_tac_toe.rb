@@ -88,6 +88,8 @@ class TicTacToe
   end
 
   def full?
-
+    @board.all? do |value|
+      value == "X" || value == "O"
+    end
   end
 end
